@@ -1,4 +1,5 @@
 import os
+import argparse
 from openai import OpenAI
 client = OpenAI()
 
@@ -70,9 +71,11 @@ def write_markdown(summaries, output_path="repo_summary.md"):
     print(f"Markdown summary generated at {output_path}")
 
 if __name__ == "__main__":
-    # リポジトリのルートディレクトリのパス
-    repo_path = "./repo/graphai"
+    parser = argparse.ArgumentParser(description="リポジトリのコードを要約するスクリプト")
+    parser.add_argument("repo_path", type=str, help="要約するリポジトリのパス")
+    args = parser.parse_args()
+    
     # ディレクトリを再帰的に探索し、要約を生成
-    summaries = process_directory(repo_path)
+    summaries = process_directory(args.repo_path)
     # 要約をMarkdownファイルとして書き出し
     write_markdown(summaries)
