@@ -13,7 +13,7 @@
 - Python 3.x
 - [OpenAI Pythonクライアントライブラリ](https://pypi.org/project/openai/)
   ```bash
-  pip install openai
+  pip install openai argparse
   ```
 
 ## 設定
