@@ -27,10 +27,10 @@ OpenAI APIキーが必要です。APIキーの設定は `OPENAI_API_KEY` の環�
 3. 以下のコマンドでスクリプトを実行し、Markdown形式の要約ファイルを生成します。
 
    ```bash
-   python summarize_repo.py /repo_path
+   python summarize_repo.py [repo_path]
    ```
 
-   - `repo_path` 変数で指定されたパスのディレクトリ以下のコードを要約します。
+   - `repo_path` で指定されたパスのディレクトリ以下のコードを要約します。
    - 生成された要約ファイル `repo_summary.md` は同じディレクトリに保存されます。
 
 ## 関数説明
