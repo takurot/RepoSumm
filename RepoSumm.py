@@ -9,7 +9,7 @@ def summarize_code(code_snippet):
     """
     messages = [
         { "role": "system", "content": "You are a helpful assistant who summarizes code and markdown file." },
-        { "role": "user", "content": f"Please summarize the following source code or markdown file or parameter file in English:\n\n{code_snippet}" }
+        { "role": "user", "content": f"Please provide a concise summary of the following code or file. Focus on explaining its primary functionality, key modules, functions, classes, and any parameters or settings it defines. Additionally, if the code interacts with APIs, external libraries, or specific workflows, please clarify those connections.\n\n{code_snippet}" }
     ]
 
     response = client.chat.completions.create(
