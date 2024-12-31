@@ -13,7 +13,7 @@ This script analyzes code and related files within a repository (`.py`, `.js`, `
 - Python 3.x
 - [OpenAI Python Client Library](https://pypi.org/project/openai/)
   ```bash
-  pip install openai argparse
+  pip install -r requirement.txt
   ```
 
 ## Configuration
