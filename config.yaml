@@ -1,0 +1,30 @@
+# RepoSumm Configuration
+excluded_dirs:
+  - .git
+  - __pycache__
+  - node_modules
+  - venv
+  - .venv
+  - dist
+  - build
+
+file_extensions:
+  - .py
+  - .js
+  - .ts
+  - .c
+  - .cpp
+  - .md
+  - .yaml
+  - .json
+  - .java
+  - .go
+  - .rs
+
+chunk_size: 2000  # Characters per chunk for large files
+temperature: 0.5  # OpenAI API temperature parameter
+
+# Analysis settings
+analysis_depth: "detailed"  # basic, detailed, or comprehensive
+include_metrics: true  # Include code metrics in summary
+max_file_size: 1000000  # Maximum file size in bytes to process
